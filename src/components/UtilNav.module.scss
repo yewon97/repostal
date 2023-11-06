@@ -1,0 +1,36 @@
+.topmenu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  z-index: 5;
+
+  &_wrap {
+    width: 1200px;
+    position: relative;
+    margin: 8px auto;
+    overflow: hidden;
+
+    ul {
+      float: right;
+
+      > li {
+        float: left;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        line-height: 29px;
+      }
+    }
+
+    .cart {
+      > span {
+        position: absolute;
+        right: 4px;
+        font-size: 11px;
+        top: -6px;
+      }
+    }
+  }
+}

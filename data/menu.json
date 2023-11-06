@@ -1,0 +1,78 @@
+[
+  {
+    "gnb": "기관소개",
+    "url": "/about/division",
+    "lnb": [
+      {
+        "name": "소속 기관 소개",
+        "url": "/about/division"
+      },
+      {
+        "name": "찾아오시는 길",
+        "url": "/about/location"
+      },
+      {
+        "name": "이용시간",
+        "url": "/about/time"
+      }
+    ]
+  },
+  {
+    "gnb": "쇼핑하기",
+    "url": "/shop/all",
+    "lnb": [
+      {
+        "name": "전체",
+        "url": "/shop/all"
+      },
+      {
+        "name": "우표류",
+        "url": "/shop/stamp"
+      },
+      {
+        "name": "엽서류",
+        "url": "/shop/postcard"
+      },
+      {
+        "name": "축하카드류",
+        "url": "/shop/card"
+      }
+    ]
+  },
+  {
+    "gnb": "우정소식",
+    "url": "/news/announcement",
+    "lnb": [
+      {
+        "name": "공지사항",
+        "url": "/news/announcement"
+      },
+      {
+        "name": "민원신청",
+        "url": "/news/complaints"
+      },
+      {
+        "name": "자주하는 질문",
+        "url": "/news/faq"
+      }
+    ]
+  },
+  {
+    "gnb": "방문접수",
+    "url": "/parcel/guide",
+    "lnb": [
+      {
+        "name": "이용안내",
+        "url": "/parcel/guide"
+      },
+      {
+        "name": "접수예약/조회",
+        "url": "/parcel/receipt"
+      },
+      {
+        "name": "반품예약/조회",
+        "url": "/parcel/refund"
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+/* header */
+.header {
+  width: 100%;
+  min-width: 1200px;
+  z-index: 10;
+  position: relative;
+  color: #454851;
+  border-bottom: 5px solid #e73a38;
+  padding-bottom: 3px;
+}
+
+.logo {
+  width: 201px;
+  height: 55px;
+  margin: auto;
+  z-index: 10;
+  position: absolute;
+  left: calc(50% - 100.5px);
+  top: 50px;
+
+  a {
+    width: 201px;
+    height: 55px;
+    background: url('../../public/images/logo.png') no-repeat;
+    text-indent: -9999px;
+    display: block;
+  }
+}
+
+.gnb {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 160px;
+  font-size: 24px;
+  font-family: 'BMJUA';
+
+  &_wrap {
+    left: calc(50% - 400px);
+    position: absolute;
+    max-width: 1200px;
+    top: 138px;
+
+    > ul {
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      overflow: hidden;
+
+      > li {
+        width: 200px;
+        float: left;
+        text-align: center;
+        z-index: 20;
+
+        > a {
+          display: block;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+}
+
+.lnb {
+  margin-top: 6px;
+  font-size: 18px;
+  background-color: rgba(228, 228, 228, 0.863);
+  padding: 10px 0;
+  color: #5d6270;
+  min-height: 150px;
+
+  > li {
+    padding: 7px 0;
+
+    > a {
+      &:hover {
+        color: #d45246;
+      }
+    }
+  }
+}
