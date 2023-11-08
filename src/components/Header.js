@@ -5,7 +5,14 @@ import styles from './Header.module.scss';
 import { useState } from 'react';
 
 export default function Header({ menus }) {
-  const [showMenu, setShowMenu] = useState(false);
+  const [toggleMenu, setTogglMenu] = useState(false);
+
+  const handleShowMenu = () => {
+    setTogglMenu(true);
+  };
+  const handleHideMenu = () => {
+    setTogglMenu(false);
+  };
 
   return (
     <header className={styles.header} id="header">
@@ -16,12 +23,12 @@ export default function Header({ menus }) {
       <nav class={styles.gnb}>
         <h2 class="hidden">주요메뉴</h2>
         <div class={styles.gnb_wrap}>
-          <ul>
+          <ul onMouseOver={handleShowMenu} onMouseOut={handleHideMenu}>
             {menus.map(({ gnb, url, lnb }) => {
               return (
                 <li>
                   <Link href={url}>{gnb}</Link>
-                  {showMenu && (
+                  {toggleMenu && (
                     <ul class={styles.lnb}>
                       {lnb.map((l) => (
                         <li>

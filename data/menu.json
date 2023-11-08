@@ -19,11 +19,11 @@
   },
   {
     "gnb": "쇼핑하기",
-    "url": "/shop/all",
+    "url": "/shop",
     "lnb": [
       {
         "name": "전체",
-        "url": "/shop/all"
+        "url": "/shop"
       },
       {
         "name": "우표류",
