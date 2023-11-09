@@ -1,5 +1,6 @@
 import styles from './Footer.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -105,11 +106,21 @@ export default function Footer() {
         <ul className={styles.footer_bottom_mark}>
           <li>
             <Link href="javascript:void(0);">
-              <img src="images/mark_wa.png" alt="웹 접근성 품질인증 마크" />
+              <Image
+                width={72}
+                height={47}
+                src="/images/mark_wa.png"
+                alt="웹 접근성 품질인증 마크"
+              />
             </Link>
           </li>
           <li>
-            <img src="images/mark_ncsi.png" alt="국가고객만족도 수상마크" />
+            <Image
+              width={72}
+              height={47}
+              src="/images/mark_ncsi.png"
+              alt="국가고객만족도 수상마크"
+            />
           </li>
         </ul>
       </div>

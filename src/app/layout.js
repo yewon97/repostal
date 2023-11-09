@@ -29,7 +29,7 @@ export default async function RootLayout({ children }) {
       />
       <body>
         <Header menus={menus} />
-        <main id="main" className="main max-w-screen-xl m-auto">
+        <main id="main" className="main">
           {children}
         </main>
         <Footer />
