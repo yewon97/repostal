@@ -1,0 +1,42 @@
+.pagination__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.pagination__navi {
+  > a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d45246;
+  }
+}
+
+.pagination__num {
+  &.active {
+    color: #d45246;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #434343;
+  }
+
+  > a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
