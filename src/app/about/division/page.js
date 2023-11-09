@@ -1,9 +1,6 @@
 import { BiSearchAlt2 } from 'react-icons/bi';
-import {
-  AiOutlineDoubleRight,
-  AiOutlineRight,
-  AiOutlineLeft,
-} from 'react-icons/ai';
+import Link from 'next/link';
+import Pagination from '@/components/Pagination';
 
 const data = [
   {
@@ -79,41 +76,36 @@ export default function DivisionPage() {
         <h4 className="hidden">지역별 우체국 안내</h4>
         <ul>
           <li>
-            <a href="">서울</a>
+            <Link href="">서울</Link>
           </li>
           <li>
-            <a href="">경인</a>
+            <Link href="">경인</Link>
           </li>
           <li>
-            <a href="">부산</a>
+            <Link href="">부산</Link>
           </li>
           <li>
-            <a href="">충청</a>
+            <Link href="">충청</Link>
           </li>
           <li>
-            <a href="">전남</a>
+            <Link href="">전남</Link>
           </li>
           <li>
-            <a href="">경북</a>
+            <Link href="">경북</Link>
           </li>
           <li>
-            <a href="">전북</a>
+            <Link href="">전북</Link>
           </li>
           <li>
-            <a href="">강원</a>
+            <Link href="">강원</Link>
           </li>
           <li>
-            <a href="">제주</a>
+            <Link href="">제주</Link>
           </li>
         </ul>
       </div>
-      <div className="search_wrap">
-        <form
-          action="search_postal.php"
-          name="search_postal"
-          method="get"
-          onsubmit="return searchkeyword()"
-        >
+      <section className="search_wrap">
+        <form action="" name="search_postal" method="get" onSubmit="">
           <fieldset>
             <legend className="hidden">우체국 검색</legend>
             <div className="search_input_wrap">
@@ -130,24 +122,31 @@ export default function DivisionPage() {
             </div>
           </fieldset>
         </form>
-      </div>
-      <div>
+      </section>
+      <section>
         <table summary="등록된 공지사항" className="table">
           <caption className="hidden">우체국 리스트</caption>
+          <colgroup>
+            <col style={{ width: '6%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '15%' }} />
+            <col style={{ width: '25%' }} />
+            <col style={{ width: '11%' }} />
+          </colgroup>
           <thead>
             <tr>
-              <th className="list_number">번호</th>
-              <th className="list_region">총괄국명</th>
-              <th className="list_title">우체국명</th>
-              <th className="list_address">주소</th>
-              <th className="list_phone">전화번호</th>
+              <th scope="col">번호</th>
+              <th scope="col">총괄국명</th>
+              <th scope="col">우체국명</th>
+              <th scope="col">주소</th>
+              <th scope="col">전화번호</th>
             </tr>
           </thead>
           <tbody>
             {data.map((item, i) => {
               return (
                 <tr>
-                  <td>{i + 1}</td>
+                  <td scope="row">{i + 1}</td>
                   <td>{item.name}</td>
                   <td>{item.name2}</td>
                   <td>{item.address}</td>
@@ -157,59 +156,8 @@ export default function DivisionPage() {
             })}
           </tbody>
         </table>
-        <div className="page_list">
-          <p className="page_prev">
-            <a href="sub_01.php?page=1" title="이전 페이지">
-              <AiOutlineLeft />
-            </a>
-          </p>
-          <div className="page_num">
-            <ul className="page_num__list">
-              <li>
-                <a
-                  id="page1"
-                  href="sub_01.php?page=1"
-                  style={{
-                    color: 'rgb(212, 82, 70)',
-                    fontWeight: 'bold',
-                    borderBottom: '1px solid rgb(69, 72, 81)',
-                  }}
-                >
-                  1
-                </a>
-              </li>
-              <li>
-                <a id="page2" href="sub_01.php?page=2">
-                  2
-                </a>
-              </li>
-              <li>
-                <a id="page3" href="sub_01.php?page=3">
-                  3
-                </a>
-              </li>
-              <li>
-                <a id="page4" href="sub_01.php?page=4">
-                  4
-                </a>
-              </li>
-              <li>
-                <a id="page5" href="sub_01.php?page=5">
-                  5
-                </a>
-              </li>
-            </ul>
-          </div>
-          <p className="page_next">
-            <a href="sub_01.php?page=2">
-              <AiOutlineRight />
-            </a>
-            <a href="sub_01.php?page=6" title="다음 목록">
-              <AiOutlineDoubleRight />
-            </a>
-          </p>
-        </div>
-      </div>
+        <Pagination />
+      </section>
     </>
   );
 }

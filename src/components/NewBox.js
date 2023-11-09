@@ -1,7 +1,7 @@
 export default function NewBox() {
   return (
-    <section className="main_cont1">
-      <div className="main_cont1_wrap">
+    <section className="main_cont1 mt-[60px]">
+      <div className="flex justify-between flex-nowrap min-w-[1200px]">
         <article className="notice_wrap">
           <h3 className="notice">공지사항</h3>
 
