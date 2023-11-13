@@ -1,7 +1,10 @@
+// import { getAllMenu, getMenu } from '@/service/menu';
 import styles from './SideNav.module.scss';
 import Link from 'next/link';
 
-export default function SideNav() {
+export default function SideNav({ url }) {
+  // const data = await getMenu(url);
+
   return (
     <aside id="aside" className={styles.lnb_aside}>
       <div className="lnb_aside_wrap">

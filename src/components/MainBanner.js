@@ -2,11 +2,11 @@
 import Slider from 'react-slick';
 import Image from 'next/image';
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+function SampleNextArrow({ className, style, onClick }) {
   return (
-    <div
+    <button
       className={className}
+      onClick={onClick}
       style={{
         ...style,
         display: 'block',
@@ -16,16 +16,15 @@ function SampleNextArrow(props) {
         height: '75px',
         transform: 'translate(25%, -50%)',
       }}
-      onClick={onClick}
-    />
+    ></button>
   );
 }
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+function SamplePrevArrow({ className, style, onClick }) {
   return (
-    <div
+    <button
       className={className}
+      onClick={onClick}
       style={{
         ...style,
         display: 'block',
@@ -36,8 +35,7 @@ function SamplePrevArrow(props) {
         zIndex: 10,
         transform: 'translate(-25%, -50%)',
       }}
-      onClick={onClick}
-    />
+    ></button>
   );
 }
 

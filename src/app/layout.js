@@ -1,8 +1,9 @@
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import './globals.scss';
-import { getMenus } from '@/service/menu';
+import './styles/reset.scss';
+import './styles/globals.scss';
+import { getAllMenu } from '@/service/menu';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -12,7 +13,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const menus = await getMenus();
+  const menus = await getAllMenu();
 
   return (
     <html lang="ko">
@@ -20,11 +21,13 @@ export default async function RootLayout({ children }) {
         rel="stylesheet"
         type="text/css"
         charset="UTF-8"
+        precedence="default"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
       />
       <link
         rel="stylesheet"
         type="text/css"
+        precedence="default"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       <body>

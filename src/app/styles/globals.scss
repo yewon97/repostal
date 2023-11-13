@@ -1,144 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 $grayf2: #f2f2f2;
-
-/* reset css */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-  font-family: 'paybooc-Medium';
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-input:focus {
-  outline: none;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-div:focus-visible {
-  outline: none;
-}
 
 /* font */
 @font-face {
@@ -242,7 +102,7 @@ div:focus-visible {
 }
 .notice_wrap .notice::after {
   position: absolute;
-  content: url(../../public/images/board_underline.png);
+  content: url(../../../public/images/board_underline.png);
   top: 18px;
   left: 6px;
 }
@@ -276,7 +136,7 @@ div:focus-visible {
   position: absolute;
   top: 15px;
   right: 30px;
-  background-image: url(../../public/images/more.png);
+  background-image: url(../../../public/images/more.png);
   width: 35px;
   height: 35px;
   text-indent: -9999px;
@@ -300,7 +160,7 @@ div:focus-visible {
   color: #d45246;
 }
 .quickbtn_wrap .quickbtn1::before {
-  background: url(../../public/images/quick_btns_01.png) no-repeat;
+  background: url(../../../public/images/quick_btns_01.png) no-repeat;
   content: '';
   display: inline-block;
   width: 100px;
@@ -316,7 +176,7 @@ div:focus-visible {
   float: left;
 }
 .quickbtn_wrap .quickbtn2::before {
-  background: url(../../public/images/quick_btns_02.png) no-repeat;
+  background: url(../../../public/images/quick_btns_02.png) no-repeat;
   content: '';
   display: inline-block;
   width: 100px;
@@ -328,7 +188,7 @@ div:focus-visible {
   float: left;
 }
 .quickbtn_wrap .quickbtn3::before {
-  background: url(../../public/images/quick_btns_03.png) no-repeat;
+  background: url(../../../public/images/quick_btns_03.png) no-repeat;
   content: '';
   display: inline-block;
   width: 100px;
@@ -342,7 +202,7 @@ div:focus-visible {
   margin: 0 80px 0 53px;
 }
 .quickbtn_wrap .quickbtn4::before {
-  background: url(../../public/images/quick_btns_04.png) no-repeat;
+  background: url(../../../public/images/quick_btns_04.png) no-repeat;
   content: '';
   display: inline-block;
   width: 100px;
@@ -436,7 +296,7 @@ div:focus-visible {
   font-weight: 900;
 }
 .complain_wrap div span a::after {
-  content: url(../../public/images/quick_arrow.png);
+  content: url(../../../public/images/quick_arrow.png);
   display: inline-block;
   vertical-align: middle;
   padding: 0 5px;
@@ -602,7 +462,6 @@ ul.tabs li.current {
 /* search_box */
 .search_wrap {
   text-align: center;
-  margin: 40px 0;
 }
 .search_input_wrap input {
   width: 350px;
@@ -613,7 +472,6 @@ ul.tabs li.current {
   line-height: 30px;
   font-family: 'paybooc-Medium';
   box-sizing: border-box;
-  margin-left: 20px;
 }
 .search_input_wrap input:focus {
   border: 1px solid #d45246;
@@ -646,7 +504,7 @@ ul.tabs li.current {
   padding: 0px 10px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
-  background: url('../../public/images/toggle_arrow.png') no-repeat 95% 50%;
+  background: url('../../../public/images/toggle_arrow.png') no-repeat 95% 50%;
   background-size: 15%;
   appearance: none;
   color: #454851;
@@ -660,3 +518,339 @@ ul.tabs li.current {
   text-align: center;
   margin-bottom: 20px;
 }
+
+.top_util_section {
+  height: 30px;
+}
+.total_page {
+  float: left;
+  line-height: 30px;
+}
+.total_page span {
+  color: #d45246;
+  font-weight: bold;
+}
+.search_wrap {
+  float: right;
+}
+.search_wrap select,
+.search_wrap div {
+  float: left;
+  width: 230px;
+}
+.search_input_wrap input {
+  width: 190px;
+  height: 30px;
+  padding: 0px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  line-height: 30px;
+  font-family: 'paybooc-Medium';
+  box-sizing: border-box;
+}
+.search_input_wrap input:focus {
+  border: 1px solid #d45246;
+  transition: all 0.3s;
+}
+.search_input_wrap button {
+  background: #d45246;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-family: 'paybooc-Medium';
+  line-height: 24px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 0 rgb(136 136 136);
+  cursor: pointer;
+}
+.search_input_wrap button:active {
+  box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 2px;
+  background-color: #a13329;
+}
+.search_wrap select {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-family: 'paybooc-Medium';
+  margin-right: 5px;
+  padding: 0px 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  background: url('../../../public/images/toggle_arrow.png') no-repeat 95% 50%;
+  background-size: 15%;
+  appearance: none;
+  color: #454851;
+}
+.search_wrap select:focus-visible {
+  outline: 1px solid #d45246;
+}
+
+table.notice_table {
+  width: 910px;
+  margin: 10px auto 30px;
+  text-align: center;
+  border-collapse: collapse;
+  border-top: 3px solid #d45246;
+  border-bottom: 2px solid #999;
+  color: #454851;
+  line-height: 50px;
+}
+.notice_table tr {
+  height: 50px;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+}
+
+.list_number {
+  width: 10%;
+}
+.list_region {
+  width: 12%;
+}
+.list_date {
+  width: 15%;
+}
+.list_view {
+  width: 10%;
+}
+.notice_table tbody tr td:nth-child(3) {
+  text-align: left;
+  padding: 0 15px;
+}
+thead {
+  font-size: 18px;
+}
+tbody tr:hover {
+  background-color: #fff7f7;
+}
+
+.page_list {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+}
+.page_prev {
+  float: left;
+  font-size: 20px;
+  color: #d45246;
+}
+.page_next {
+  font-size: 20px;
+  color: #d45246;
+}
+
+.page_list .page_num {
+  float: left;
+  font-size: 18px;
+}
+.page_num li {
+  float: left;
+  margin: 0 10px;
+}
+.writing {
+  display: flex;
+  justify-content: center;
+}
+.writing a {
+  background: #454851;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-family: 'paybooc-Medium';
+  line-height: 40px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 0 rgb(136 136 136);
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+  width: 200px;
+  display: block;
+}
+.writing a:active {
+  box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 2px;
+  background-color: #6a6e7c;
+}
+
+/* 민원 form */
+.complain_form {
+  width: 900px;
+  height: 680px;
+  border-radius: 5px;
+  background: #454851;
+  padding: 30px 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  position: relative;
+  font-family: 'paybooc-Medium';
+}
+.character_img {
+  position: absolute;
+  left: -165px;
+  top: 405px;
+  width: 213px;
+  height: 327px;
+  background: url('../../../public/images/char.png') no-repeat;
+}
+.complain_form fieldset {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 700px;
+  min-width: 500px;
+  height: 618px;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.complain_form label {
+  width: 120px;
+  text-align: left;
+  line-height: 30px;
+  color: #fff;
+  position: absolute;
+  left: 37px;
+  display: block;
+  font-family: 'BMJUA';
+  font-size: 25px;
+}
+.complain_form input {
+  width: 560px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: #454851;
+  font-size: 14px;
+  font-family: 'paybooc-Medium';
+  border: 1px solid #ced4da;
+  box-shadow: 2px 2px 0 rgba(136, 136, 136, 0.377);
+  box-sizing: border-box;
+}
+.complain_form input:active {
+  box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 2px;
+}
+.complain_form input:focus {
+  border: 2px solid #858585;
+}
+.complain_form textarea {
+  width: 560px;
+  height: 380px;
+  resize: none;
+  box-sizing: border-box;
+  color: #454851;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 rgba(136, 136, 136, 0.377);
+  font-family: 'paybooc-Medium';
+  margin-bottom: 30px;
+}
+.complain_form textarea:active {
+  box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 2px;
+}
+.complain_form textarea:focus {
+  outline: 2px solid #858585;
+}
+
+span.add_desc {
+  font-size: 14px;
+  color: #999;
+  height: 30px;
+  line-height: 30px;
+  padding-top: 2px;
+  margin-left: 20px;
+}
+.complain_form li:nth-of-type(4) label {
+  top: 585px;
+}
+
+/* select */
+.all_input_wrap select {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-family: 'paybooc-Medium';
+  margin-right: 5px;
+  padding: 0px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background: url('../../../public/images/toggle_arrow.png') no-repeat 95% 50%;
+  background-size: 15%;
+  appearance: none;
+  color: #454851;
+  box-shadow: 2px 2px 0 rgba(136, 136, 136, 0.377);
+}
+.all_input_wrap select:active {
+  box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 2px;
+}
+.all_input_wrap select:focus-visible {
+  outline: 2px solid #858585;
+}
+/* select */
+
+/* 완료 버튼 */
+.btn_wrap {
+  width: 910px;
+  height: 51px;
+  margin: 50px auto 0;
+}
+button.submit_complain {
+  font-family: 'BMJUA';
+  width: 235px;
+  height: 51px;
+  margin: 0 auto;
+  background: #eeba4c;
+  font-size: 25px;
+  line-height: 51px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 3px 0 rgb(136 136 136);
+  cursor: pointer;
+}
+button.submit_complain:active {
+  box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 2px;
+  background-color: #b1862b;
+}
+
+/* background: #D45246;
+background-color: #a13329; */
+
+/* 완료 버튼 */
+ul.all_input_wrap > li {
+  width: 680px;
+  margin: 0 auto 30px;
+  height: 30px;
+}
+ul.all_input_wrap > li > * {
+  float: left;
+}
+/* 민원신고 폼 - 끝 */
+
+/* input[tpye="flie"] {
+  color: #a13329;
+} */

@@ -65,11 +65,7 @@ export default function Home() {
             </article>
             <article className="findpost_wrap">
               <h3 className="findpost">우체국 찾기</h3>
-              <button
-                type="button"
-                className="findpost_btn"
-                onclick="window.open('https:/\/map.kakao.com/?itemId=19488833')"
-              >
+              <button type="button" className="findpost_btn">
                 지도에서 보기
               </button>
             </article>

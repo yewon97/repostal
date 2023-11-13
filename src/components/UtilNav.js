@@ -1,29 +1,30 @@
 import Image from 'next/image';
 import styles from './UtilNav.module.scss';
+import Link from 'next/link';
 
 export default function UtilNav() {
   return (
-    <div class={styles.topmenu}>
-      <div class={styles.topmenu_wrap}>
-        <h2 class="hidden">사용자메뉴</h2>
+    <div className={styles.topmenu}>
+      <div className={styles.topmenu_wrap}>
+        <h2 className="hidden">사용자메뉴</h2>
         <ul>
           <li>
-            <a class="login" href="">
+            <Link className="login" href="">
               로그인
-            </a>
+            </Link>
           </li>
           <li>
-            <a class="joinup" href="">
+            <Link className="joinup" href="">
               회원가입
-            </a>
+            </Link>
           </li>
           <li>
-            <a class="mypage" href="#">
+            <Link className="mypage" href="#">
               My Page
-            </a>
+            </Link>
           </li>
           <li>
-            <a class={styles.cart} href="#">
+            <Link className={styles.cart} href="#">
               <div>
                 <Image
                   src="/images/cart.png"
@@ -33,7 +34,7 @@ export default function UtilNav() {
                 />
               </div>
               <span>0</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

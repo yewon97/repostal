@@ -105,7 +105,7 @@ export default function Footer() {
         </div>
         <ul className={styles.footer_bottom_mark}>
           <li>
-            <Link href="javascript:void(0);">
+            <Link href="">
               <Image
                 width={72}
                 height={47}

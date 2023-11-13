@@ -17,19 +17,19 @@ export default function Header({ menus }) {
   return (
     <header className={styles.header} id="header">
       <UtilNav />
-      <h1 class={styles.logo}>
+      <h1 className={styles.logo}>
         <Link href="/">우정사업본부</Link>
       </h1>
-      <nav class={styles.gnb}>
-        <h2 class="hidden">주요메뉴</h2>
-        <div class={styles.gnb_wrap}>
+      <nav className={styles.gnb}>
+        <h2 className="hidden">주요메뉴</h2>
+        <div className={styles.gnb_wrap}>
           <ul onMouseOver={handleShowMenu} onMouseOut={handleHideMenu}>
-            {menus.map(({ gnb, url, lnb }) => {
+            {menus.map(({ gnb, url, lnb }, idx) => {
               return (
-                <li>
+                <li key={idx}>
                   <Link href={url}>{gnb}</Link>
                   {toggleMenu && (
-                    <ul class={styles.lnb}>
+                    <ul className={styles.lnb}>
                       {lnb.map((l) => (
                         <li>
                           <Link href={l.url}>{l.name}</Link>

@@ -6,7 +6,7 @@ export default function ParcelLayout({ children }) {
   return (
     <>
       <SubHeader />
-      <section class="page-container">
+      <section className="page-container">
         <SideNav />
         <Container>{children}</Container>
       </section>
