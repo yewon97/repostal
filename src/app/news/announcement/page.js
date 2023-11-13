@@ -1,3 +1,4 @@
+import Pagination from '@/components/Pagination';
 import React from 'react';
 
 export default function NewsPage() {
@@ -42,58 +43,37 @@ export default function NewsPage() {
           </form>
         </div>
       </article>
-      <table summary="등록된 공지사항" className="notice_table">
-        <caption className="hidden">공지사항 리스트</caption>
-        <thead>
-          <tr>
-            <th className="list_number">번호</th>
-            <th className="list_region">지역</th>
-            <th className="list_title">제목</th>
-            <th className="list_date">작성일</th>
-            <th className="list_view">조회수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>서울</td>
-            <td>
-              <a href="notice_cont.php?idx=1&no=1">안녕하세요</a>
-            </td>
-            <td>2022-01-25</td>
-            <td>21</td>
-          </tr>
-        </tbody>
-      </table>
-      <div className="page_list">
-        <p className="page_prev">
-          <a href="notice.php?page=1" title="이전 페이지">
-            <i className="fas fa-angle-left" />
-          </a>
-        </p>
-        <div className="page_num">
-          <ul>
-            <li>
-              <a
-                id="page1"
-                href="notice.php?page=1"
-                style={{
-                  color: 'rgb(212, 82, 70)',
-                  fontWeight: 'bold',
-                  borderBottom: '1px solid rgb(69, 72, 81)',
-                }}
-              >
-                1{' '}
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p className="page_next">
-          <a href="notice.php?page=1">
-            <i className="fas fa-angle-right" />
-          </a>
-        </p>
-      </div>
+      <section>
+        <table summary="등록된 공지사항" className="notice_table">
+          <caption className="hidden">공지사항 리스트</caption>
+          <colgroup>
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '12%' }} />
+            <col />
+            <col style={{ width: '15%' }} />
+            <col style={{ width: '10%' }} />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">번호</th>
+              <th scope="col">지역</th>
+              <th scope="col">제목</th>
+              <th scope="col">작성일</th>
+              <th scope="col">조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>서울</td>
+              <td>안녕하세요</td>
+              <td>2022-01-25</td>
+              <td>21</td>
+            </tr>
+          </tbody>
+        </table>
+        <Pagination />
+      </section>
     </>
   );
 }

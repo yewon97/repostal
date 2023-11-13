@@ -3,14 +3,13 @@ import SideNav from '@/components/SideNav';
 import SubHeader from '@/components/SubHeader';
 import { getAllMenu } from '@/service/menu';
 
-export default async function AboutLayout({ children }) {
+export default async function NewsLayout({ children }) {
   const menu = await getAllMenu();
 
   return (
     <>
       <SubHeader />
       <section className="page-container">
-        <SideNav menu={menu[0]} />
         <Container>{children}</Container>
       </section>
     </>

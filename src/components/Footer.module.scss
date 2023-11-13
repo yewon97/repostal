@@ -5,95 +5,47 @@
   position: relative;
   margin-top: 48px;
   min-width: 1200px;
+
+  &_top {
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    background-color: #e73a38;
+    height: 56px;
+    min-width: 1200px;
+  }
+
+  &_law {
+    li {
+      font-size: 14px;
+      float: left;
+      line-height: 56px;
+      margin-right: 50px;
+      color: #fff;
+    }
+  }
+
+  &_bottom {
+    position: relative;
+    margin: auto;
+    color: #666666;
+    font-size: 13px;
+    width: 1200px;
+    min-width: 1200px;
+    overflow: hidden;
+
+    h2 {
+      width: 145px;
+      height: 39px;
+      background: url(../../public/images/logo.png) no-repeat;
+      background-size: cover;
+      text-indent: -9999px;
+      margin-top: 15px;
+      float: left;
+    }
+  }
 }
 
-/* footer-top */
-.footer_top {
-  position: relative;
-  margin: auto;
-  z-index: 2;
-  background-color: #e73a38;
-  height: 56px;
-  min-width: 1200px;
-}
-.law_site_wrap {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 50px;
-  height: 56px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-/* footer-law */
-.footer_law li {
-  font-size: 14px;
-  float: left;
-  line-height: 56px;
-  margin-right: 50px;
-  color: #fff;
-}
-
-/* family-site */
-.family_site {
-  background: #fff;
-  width: 156px;
-  height: 23px;
-  border: none;
-  position: absolute;
-  right: 32px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.family_site h3 {
-  cursor: pointer;
-  line-height: 20px;
-  height: 25px;
-  font-size: 13px;
-  color: #666666;
-  font-weight: normal;
-  padding: 0px 9px;
-  background: url(../../public/images/toggle_arrow_01.png) no-repeat 128px
-    center;
-}
-.family_site ul {
-  width: 156px;
-  height: 200px;
-  padding: 5px 9px;
-  background: #454851d0;
-  position: absolute;
-  display: none;
-  box-sizing: border-box;
-  bottom: 23px;
-}
-.family_site ul a {
-  color: #f2f2f2;
-}
-.family_site ul li {
-  margin: 0;
-  font-size: 11px;
-  line-height: 19px;
-}
-
-/* footer-bottom */
-.footer_bottom {
-  position: relative;
-  margin: auto;
-  color: #666666;
-  font-size: 13px;
-  width: 1200px;
-  min-width: 1200px;
-  overflow: hidden;
-}
-.footer_bottom h2 {
-  width: 145px;
-  height: 39px;
-  background: url(../../public/images/logo.png) no-repeat;
-  background-size: cover;
-  text-indent: -9999px;
-  margin-top: 15px;
-  float: left;
-}
 .footer_bottom_cont_wrap {
   float: left;
   margin-top: 28px;
@@ -121,4 +73,60 @@
 }
 .footer_bottom_mark li:first-child {
   margin-right: 10px;
+}
+
+.law_site {
+  &_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    height: 56px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+/* family-site */
+.family_site {
+  background: #fff;
+  width: 156px;
+  height: 23px;
+  border: none;
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  h3 {
+    cursor: pointer;
+    line-height: 20px;
+    height: 25px;
+    font-size: 13px;
+    color: #666666;
+    font-weight: normal;
+    padding: 0px 9px;
+    background: url(../../public/images/toggle_arrow_01.png) no-repeat 128px
+      center;
+  }
+
+  ul {
+    width: 156px;
+    height: 200px;
+    padding: 5px 9px;
+    background: #454851d0;
+    position: absolute;
+    display: none;
+    box-sizing: border-box;
+    bottom: 23px;
+
+    > li {
+      margin: 0;
+      font-size: 11px;
+      line-height: 19px;
+    }
+
+    a {
+      color: #f2f2f2;
+    }
+  }
 }
