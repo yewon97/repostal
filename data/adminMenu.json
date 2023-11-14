@@ -1,0 +1,18 @@
+{
+  "gnb": "관리자",
+  "url": "/admin",
+  "lnb": [
+    {
+      "name": "공지사항 관리",
+      "url": "/admin/news/announcement"
+    },
+    {
+      "name": "FAQ 관리",
+      "url": "/admin/news/faq"
+    },
+    {
+      "name": "민원관리",
+      "url": "/admin/news/complaints"
+    }
+  ]
+}

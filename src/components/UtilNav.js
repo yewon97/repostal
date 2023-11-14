@@ -9,19 +9,16 @@ export default function UtilNav() {
         <h2 className="hidden">사용자메뉴</h2>
         <ul>
           <li>
-            <Link className="login" href="">
-              로그인
-            </Link>
+            <Link href="">로그인</Link>
           </li>
           <li>
-            <Link className="joinup" href="">
-              회원가입
-            </Link>
+            <Link href="">회원가입</Link>
           </li>
           <li>
-            <Link className="mypage" href="#">
-              My Page
-            </Link>
+            <Link href="/admin">관리자</Link>
+          </li>
+          <li>
+            <Link href="#">My Page</Link>
           </li>
           <li>
             <Link className={styles.cart} href="#">
