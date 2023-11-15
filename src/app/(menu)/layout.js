@@ -3,7 +3,7 @@ import SideNav from '@/components/SideNav';
 import SubHeader from '@/components/SubHeader';
 import { getAllMenu } from '@/service/menu';
 
-export default async function ParcelLayout({ children }) {
+export default async function SubLayout({ children }) {
   const menu = await getAllMenu();
 
   return (
