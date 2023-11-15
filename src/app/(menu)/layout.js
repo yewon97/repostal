@@ -8,7 +8,7 @@ export default async function ParcelLayout({ children }) {
 
   return (
     <>
-      <SubHeader />
+      <SubHeader title={menu[3].gnb} />
       <section className="page-container">
         <SideNav menu={menu[3]} />
         <Container>{children}</Container>
